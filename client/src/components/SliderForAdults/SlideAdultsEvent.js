@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class ShopsPage extends Component {
+class SlideAdultsEvent extends Component {
   render() {
     return (
       <div>
-        Hello!
+        
       </div>
     );
   }
 }
 
-export default ShopsPage;
+export default SlideAdultsEvent;

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-import IndexPage from './pages/IndexPage';
-import RegistrationPage from './pages/RegistrationPage';
-import ShopsPage from './pages/ShopsPage';
+import IndexPage from './pages/IndexPage/IndexPage';
+import RegistrationPage from './pages/RegistrationPage/RegistrationPage';
+import ShopsPage from './pages/ShopsPage/ShopsPage';
 
 
 class App extends Component {
