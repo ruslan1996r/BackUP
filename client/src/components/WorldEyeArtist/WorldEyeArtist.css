@@ -1,0 +1,4 @@
+.world-and-picture{
+  display: flex;
+  flex-direction: row;
+}

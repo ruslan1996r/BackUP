@@ -19,7 +19,6 @@ class App extends Component {
           <Link to={`/RegistrationPage`}>RegistrationPage</Link><br />
           <Link to={`/ShopsPage`}>ShopsPage</Link><br />
         </div>
-
       </Router>
     );
   }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import Button from '../Button/Button';
 import ShopSlider from './ShopSlider';
 
@@ -8,7 +9,7 @@ class Shop extends Component {
   render() {
     return (
       <div>
-        <Button />
+        <Button buttonName={'ДЕТАЛЬНІШЕ'} />
         <ShopSlider />
       </div>
     );

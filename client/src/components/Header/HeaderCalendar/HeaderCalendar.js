@@ -6,7 +6,7 @@ class HeaderCalendar extends Component {
   render() {
     return (
       <div>
-        
+        КАЛЕНДАР ПОДІЙ
       </div>
     );
   }

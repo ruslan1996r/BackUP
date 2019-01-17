@@ -1,9 +1,11 @@
 import { all } from 'redux-saga/effects';
+//Всё сперва попадает в Root Saga
 
-import fakeSaga from './fakeSaga';
+import {indexPageSaga, watchIndexPageSaga} from './indexPageSaga';
 
 export default function* () {
   yield all([
-    fakeSaga(),
+    indexPageSaga(),
+    watchIndexPageSaga()
   ]);
 }

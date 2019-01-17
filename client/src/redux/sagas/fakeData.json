@@ -1,0 +1,98 @@
+{
+    "testjson": "SAGA WORKS!",
+    "phoneNumber": "+38 (098) 92-92-58",
+    "adultPainting": [
+        {
+            "name": "Живопис олією",
+            "time": "2.5-3 год.",
+            "cost": "150 грн."
+        },
+        {
+            "name": "Живопис акрилом",
+            "time": "2.5-3 год.",
+            "cost": "150 грн."
+        },
+        {
+            "name": "Акварель/Пастель",
+            "time": "2.5-3 год.",
+            "cost": "150 грн."
+        },
+        {
+            "name": "Подія місяця",
+            "time": "2.5-3 год.",
+            "cost": "150 грн."
+        }
+    ],
+    "painterEyes": {
+        "title": "Світ очима художника",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "gallery": [
+
+    ],
+    "shop": [
+        {
+            "name": "Зимній ліс",
+            "price": "700 грн.",
+            "image": "",
+            "size": "20см х 20см",
+            "material": "Акрил"
+        },
+        {
+            "name": "Зимній ліс",
+            "price": "700 грн.",
+            "image": "",
+            "size": "20см х 20см",
+            "material": "Акрил"
+        },
+        {
+            "name": "Зимній ліс",
+            "price": "700 грн.",
+            "image": "",
+            "size": "20см х 20см",
+            "material": "Акрил"
+        },
+        {
+            "name": "Зимній ліс",
+            "price": "700 грн.",
+            "image": "",
+            "size": "20см х 20см",
+            "material": "Акрил"
+        },
+        {
+            "name": "Зимній ліс",
+            "price": "700 грн.",
+            "image": "",
+            "size": "20см х 20см",
+            "material": "Акрил"
+        }
+    ],
+    "feedback": [
+        {
+            "author": "Yulia",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "author": "Yulia",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "author": "Yulia",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "author": "Yulia",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "author": "Yulia",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+    ],
+    "info": {
+        "address": "м. Вінниця, вул Пушкіна",
+        "phoneNumber": "+38 (098) 92-92-58",
+        "email": "the.format.vn@gmail.com"
+    }
+
+}

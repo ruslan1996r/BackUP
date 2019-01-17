@@ -1,3 +1,6 @@
+import { connect } from 'react-redux';
+
+
 import React, { Component } from 'react';
 import Header from '../../components/Header/Header/Header'
 import SliderForAdults from '../../components/SliderForAdults/SliderForAdults'
@@ -12,11 +15,18 @@ import Footer from '../../components/Footer/Footer'
 
 import './IndexPage.css'
 
+import {init} from '../../redux/actions/actionTypes'; //actionCreator
+
 class IndexPage extends Component {
+  componentDidMount(){ //запускает actionCreator
+    this.props.initData();
+  }
   render() {
+    let d = this.props.indexData; //get state from Redux
+    console.log("d: ", d);
     return (
       <div className='mainWindow'>
-        Main window
+      {d.testjson} 
         <Header />
         <SliderForAdults />
         <SliderForChildren />
@@ -32,4 +42,18 @@ class IndexPage extends Component {
   }
 }
 
-export default IndexPage;
+const mapStateToProps = (state) => { 
+  return {
+    indexData: state.indexData //данные для IndexPage
+  };
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    initData: () => {
+      dispatch(init())
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(IndexPage);

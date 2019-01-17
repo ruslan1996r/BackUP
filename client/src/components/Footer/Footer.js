@@ -8,6 +8,7 @@ class Footer extends Component {
   render() {
     return (
       <div>
+        <p>@ 2018 Всі права захищені.</p>
         <SocialNetwork />
       </div>
     );

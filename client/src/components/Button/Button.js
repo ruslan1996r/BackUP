@@ -6,7 +6,9 @@ class Button extends Component {
   render() {
     return (
       <div>
-        {this.props.buttonName}
+        <button>
+          {this.props.buttonName}
+        </button>
       </div>
     );
   }
