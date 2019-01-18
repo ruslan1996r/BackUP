@@ -26,7 +26,7 @@ class HeaderVideoText extends Component {
           <div className='main'>
             <div className='main-text'>
               <h1>Курси малювання у Вінниці</h1>
-              <p>Студія живопису «The Format» проводить курси малювання<br />
+              <p className='text-on-video'>Студія живопису «The Format» проводить курси малювання<br />
                 для дітей та дорослих</p>
               <Route path="/RegistrationPage" component={RegistrationPage} />
               <Link to={`/RegistrationPage`}>

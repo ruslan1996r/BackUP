@@ -4,10 +4,10 @@ import { connect } from 'react-redux';
 class SlideAdultsEvent extends Component {
   render() {
     return (
-      <div>
+      <div className='slider-for-adults-event'>
        {this.props.adultPainting.map((item, key)=>{
          return(
-          <div>
+          <div >
               <ul>
                 <li>{item.name}</li>
                 <li>{item.time}</li>

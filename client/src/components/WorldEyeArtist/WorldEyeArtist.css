@@ -1,4 +1,10 @@
 .world-and-picture{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+
+.text-in-artist{
+  text-decoration: none;
+  margin-bottom: 6%;
 }

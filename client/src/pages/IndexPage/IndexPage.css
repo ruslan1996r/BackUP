@@ -2,3 +2,13 @@
   display: flex;
   flex-direction: column;
 }
+
+
+.slider-for-adults, 
+.slider-for-children,
+.world-and-picture,
+.order,
+.gallery-and-header
+ {
+  margin-top: 6%;
+}

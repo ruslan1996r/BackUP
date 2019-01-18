@@ -10,7 +10,7 @@ import './SliderForAdults.css'
 class SliderForAdults extends Component {
   render() {
     return (
-      <div>
+      <div className='slider-for-adults'>
         <h2>Живопис для дорослих</h2>
         <SliderAdultsEvent />
         <Route path="/RegistrationPage" component={RegistrationPage} />

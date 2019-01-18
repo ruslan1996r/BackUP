@@ -2,7 +2,7 @@
   background-color: #FFE42C;
   position: absolute;
   opacity: 0.8;
-  width: 100%;
+  width: 100.1%;
   height: 99.3%;
   top: 0;
 }
@@ -54,7 +54,7 @@
   padding-right: 20px;
 }
 
-p{
+.text-on-video{
   font-size: 14px;
   text-align: right;
   padding-bottom: 3%

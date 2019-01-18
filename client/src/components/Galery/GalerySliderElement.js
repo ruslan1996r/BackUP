@@ -1,13 +1,28 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
 
 class GalerySliderElement extends Component {
   render() {
     return (
-      <div>
-        1 - 2 - 3 - 4
+      <div className='gallery'>
+        {this.props.gallery.map((item, key) => {
+          return (
+            <div>
+                <img src={item.photo} alt='галерея' />
+            </div>
+          )
+        })}
       </div>
     );
   }
 }
 
-export default GalerySliderElement;
+const mapStateToProps = (state) => {
+  return {
+    gallery: state.indexData.gallery //данные для GalerySliderElement
+  };
+}
+
+
+export default connect(mapStateToProps)(GalerySliderElement);

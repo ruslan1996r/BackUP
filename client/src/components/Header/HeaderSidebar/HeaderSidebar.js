@@ -7,15 +7,14 @@ import './HeaderSidebar.css'
 class HeaderSidebar extends Component {
   render() {
     return (
-      <div>
+      <div className='header-sidebar'>
+        <div>
+          <img src='./format/header/header-logo.svg' />
+        </div>
         <div className='sidebar-text'>
-          <h1>The<br />Format</h1>
-          <p>СТУДІЯ ЖИВОПИСУ</p>
+          <hr />
+          <p>ПРИЄДНУЙСЯ ДО НАС</p>
         </div>
-        <div className='yellow-block'>
-        </div>
-        <hr/>
-        <p>ПРИЄДНУЙСЯ ДО НАС</p>
         <SocialNetwork />
       </div>
     );

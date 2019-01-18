@@ -10,9 +10,12 @@ import './OrderSlider.css'
 class OrderSlider extends Component {
   render() {
     return (
-      <div>
+      <div className='order'>
+        <hr className="hr-line"/>
         <h2>В нас можна замовити</h2>
-        <OrderSliderEvent />
+        <div>
+          <OrderSliderEvent />
+        </div>
         <Route path="/RegistrationPage" component={RegistrationPage} />
         <Link to={`/RegistrationPage`}>
           <Button buttonName={'ЗАРЕЄСТРУВАТИСЬ'} />

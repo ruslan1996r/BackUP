@@ -1,0 +1,9 @@
+.slider-for-adults{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-for-adults-event{
+  display: flex;
+}

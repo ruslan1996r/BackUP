@@ -5,20 +5,20 @@ import { connect } from 'react-redux';
 class ShopSliderElement extends Component {
   render() {
     return (
-      <div>
+      <div className='shop-slider-element'>
         {this.props.shop.map((item, key) => {
           return (
             <div>
               <ul>
                 <li>Назва: {item.name}</li>
-                <li>{item.price}</li>
-                <li>{item.size}</li>
-                <li>{item.material}</li>
+                <li>Вартість: {item.price}</li>
+                <li>Розрім: {item.size}</li>
+                <li>Матеріал: {item.material}</li>
+                <Button buttonName={'ПРИДБАТИ'} />
               </ul>
             </div>
           )
         })}
-        <Button buttonName={'ПРИДБАТИ'} />
       </div>
     );
   }

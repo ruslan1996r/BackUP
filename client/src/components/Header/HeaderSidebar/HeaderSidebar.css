@@ -1,0 +1,13 @@
+.social-network{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-network img{
+  width: 20px;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+  
+}

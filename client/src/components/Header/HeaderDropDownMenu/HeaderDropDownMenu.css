@@ -2,15 +2,15 @@ span{
   display:block;
   height: 4px;
   background: black;
-  margin-bottom: 5px;
-  width: 18px;
+  margin-bottom: 4px;
+  width: 24px;
 }
 span:nth-child(2){
-  width: 12px;
+  width: 18px;
 }
 
 span:nth-child(3){
-  width: 6px;
+  width: 10px;
 }
 
 .burger-icon{

@@ -1,5 +1,5 @@
 {
-    "testjson": "SAGA WORKS!",
+    "testjson": "",
     "phoneNumber": "+38 (098) 92-92-58",
     "adultPainting": [
         {
@@ -23,12 +23,47 @@
             "cost": "150 грн."
         }
     ],
+    "chldrenPainting": [
+        {
+            "weekDay": "Середа",
+            "time": "2.5-3 год.",
+            "cost": "150 грн."
+        },
+        {
+            "weekDay": "Субота",
+            "time": "2.5-3 год.",
+            "cost": "150 грн."
+        }
+    ],
+    "orderList": [
+        {
+            "name": "Індивідуальні заняття",
+            "img": "./format/offer/offer-lesson.svg"
+        },
+        {
+            "name": "Корпоративні майтер-класи",
+            "img": "./format/offer/offer-master_class.svg"
+        },
+        {
+            "name": "Картини на замовлення",
+            "img": "./format/offer/offer-certificate.svg"
+        },
+        {
+            "name": "Подарункові сертифікати",
+            "img": "./format/offer/offer-lesson.svg"
+        }
+    ],
     "painterEyes": {
         "title": "Світ очима художника",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     "gallery": [
-
+        {
+            "photo": "./format/gallery/gallery-example1.jpg"
+        },
+        {
+            "photo": "./format/gallery/gallery-example2.jpg"
+        }
     ],
     "shop": [
         {
@@ -90,9 +125,8 @@
         }
     ],
     "info": {
-        "address": "м. Вінниця, вул Пушкіна",
+        "address": "м. Вінниця, вул Червонохрестівська 12",
         "phoneNumber": "+38 (098) 92-92-58",
         "email": "the.format.vn@gmail.com"
     }
-
 }

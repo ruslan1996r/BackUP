@@ -5,6 +5,8 @@ import IndexPage from './pages/IndexPage/IndexPage';
 import RegistrationPage from './pages/RegistrationPage/RegistrationPage';
 import ShopsPage from './pages/ShopsPage/ShopsPage';
 
+import './App.css'
+
 
 class App extends Component {
   render() {

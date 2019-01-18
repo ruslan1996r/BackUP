@@ -6,7 +6,7 @@ import './Galery.css'
 class Galery extends Component {
   render() {
     return (
-      <div>
+      <div className='gallery-and-header'>
         <h2>Галерея</h2>
         <GalerySlider />
       </div>

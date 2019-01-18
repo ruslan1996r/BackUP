@@ -1,15 +1,19 @@
 import { combineReducers } from 'redux';
 
-import {INIT_DATA} from '../../redux/actions/actionTypes';
+import { INIT_DATA } from '../../redux/actions/actionTypes';
 // import initDataReducer from './initDataReducer';
 
 const initialState = {
   number: "007",
-  initData: {"testjson": "hui"},
+  initData: { "testjson": "hui" },
   indexData: {
-    "testjson": "reducer init data", 
+    // "testjson": "reducer init data",
     "adultPainting": [],
-    "shop":[],
+    "shop": [],
+    "chldrenPainting": [],
+    "info": [],
+    "orderList": [],
+    "gallery": [],
   }
 }
 
@@ -18,14 +22,14 @@ const initialState = {
 // }
 
 const initIndexDataReducer = (state = initialState.indexData, action) => {
-  switch (action.type){
+  switch (action.type) {
     case INIT_DATA:
       console.log(INIT_DATA);
       console.log(action.indexData.default);
-      return action.indexData.default 
-      //reducer возвращает данные из action в state
-      //обновленяет state (это будет новый стейт)
-    default: 
+      return action.indexData.default
+    //reducer возвращает данные из action в state
+    //обновленяет state (это будет новый стейт)
+    default:
       return state
   }
 }

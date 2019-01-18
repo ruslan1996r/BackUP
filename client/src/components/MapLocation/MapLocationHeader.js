@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 class MapLocationHeader extends Component {
   render() {
     return (
       <div>
-        <p>м. Вінниця, вул. Червонохрестівскька 12</p>
-        <p>+380938526519</p>
-        <p>the.format.vn@gmail.com</p>
+        <p>{this.props.info.address}</p>
+        <p>{this.props.info.phoneNumber}</p>
+        <p>{this.props.info.email}</p>
       </div>
     );
   }
 }
 
-export default MapLocationHeader;
+const mapStateToProps = (state) => {
+  return {
+    info: state.indexData.info //данные для MapLocationHeader
+  };
+}
+
+
+export default connect(mapStateToProps)(MapLocationHeader);

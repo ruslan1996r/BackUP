@@ -1,0 +1,12 @@
+.slider-for-children{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffdd15;
+  height: 500px;
+  padding-top: 3%;
+}
+
+.slider-for-children-event{
+  display: flex;
+}

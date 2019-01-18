@@ -10,16 +10,16 @@ import './SliderForChildren.css'
 class SliderForChildren extends Component {
   render() {
     return (
-      <div>
+      <div className='slider-for-children'>
         <h2>Живопис для дітей та підлітків</h2>
-          <SliderChildrenEvent />
-          <Route path="/RegistrationPage" component={RegistrationPage} />
-          <Link to={`/RegistrationPage`}>
-            <Button buttonName={'ЗАРЕЄСТРУВАТИСЬ'} />
-          </Link>
+        <SliderChildrenEvent />
+        <Route path="/RegistrationPage" component={RegistrationPage} />
+        <Link to={`/RegistrationPage`}>
+          <Button buttonName={'ЗАРЕЄСТРУВАТИСЬ'} />
+        </Link>
       </div>
-        );
-      }
-    }
-    
-    export default SliderForChildren;
+    );
+  }
+}
+
+export default SliderForChildren;
