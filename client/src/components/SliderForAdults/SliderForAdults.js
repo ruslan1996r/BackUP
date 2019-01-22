@@ -11,7 +11,7 @@ class SliderForAdults extends Component {
   render() {
     return (
       <div className='slider-for-adults'>
-        <h2>Живопис для дорослих</h2>
+        <h2 className='adults-header'>Живопис для дорослих</h2>
         <SliderAdultsEvent />
         <Route path="/RegistrationPage" component={RegistrationPage} />
         <Link to={`/RegistrationPage`}>

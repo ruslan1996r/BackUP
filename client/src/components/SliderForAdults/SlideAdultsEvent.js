@@ -5,23 +5,28 @@ class SlideAdultsEvent extends Component {
   render() {
     return (
       <div className='slider-for-adults-event'>
-       {this.props.adultPainting.map((item, key)=>{
-         return(
-          <div >
+        {this.props.adultPainting.map((item, key) => {
+          return (
+            <div className='adults-event'>
               <ul>
-                <li>{item.name}</li>
-                <li>{item.time}</li>
-                <li>{item.cost}</li>
+                <li>
+                  <div className='descr-event'>
+                    <p className='cost-time-p'>{item.time}</p>
+                    <p className='cost-time-p'>{item.cost}</p>
+                  </div>
+                  <img src={item.painting} alt='Картинка' />
+                </li>
               </ul>
-          </div>
-         )
-       })}
+              <p>{item.name}</p>
+            </div>
+          )
+        })}
       </div>
     );
   }
 }
 
-const mapStateToProps = (state) => { 
+const mapStateToProps = (state) => {
   return {
     adultPainting: state.indexData.adultPainting //данные для SlideAdultsEvent
   };

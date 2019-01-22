@@ -12,8 +12,8 @@ class OrderSlider extends Component {
     return (
       <div className='order'>
         <hr className="hr-line"/>
-        <h2>В нас можна замовити</h2>
-        <div>
+        <h2 className='order-slider-header'>В нас можна замовити</h2>
+        <div className="order-slider-event">
           <OrderSliderEvent />
         </div>
         <Route path="/RegistrationPage" component={RegistrationPage} />

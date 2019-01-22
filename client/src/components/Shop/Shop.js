@@ -9,9 +9,8 @@ class Shop extends Component {
   render() {
     return (
       <div className="shop">
-        <h2>Магазин</h2>
+        <h2 className='shop-header'>Магазин</h2>
         <ShopSlider />
-        
         <Button buttonName={'ДЕТАЛЬНІШЕ'} />
       </div>
     );

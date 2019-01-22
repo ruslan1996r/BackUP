@@ -1,10 +1,54 @@
 .world-and-picture{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .text-in-artist{
   text-decoration: none;
   margin-bottom: 6%;
+}
+
+.artist-main-header{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16pt;
+  margin-bottom: 4%;
+}
+
+.artist-header{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 20pt;
+  margin-bottom: 4%;
+}
+
+.text-in-artist{
+  font-family: 'Roboto', sans-serif;
+}
+
+.artist-eye-img{
+  width: 70%;
+}
+
+.artist-eye-img img{
+  width: 100%;
+}
+
+.img-border{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, yellow 50%, black 50%);
+}
+.on-border-elem{
+  width: 97%;
+  height: 97%;
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5px;
 }

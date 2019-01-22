@@ -5,34 +5,40 @@
         {
             "name": "Живопис олією",
             "time": "2.5-3 год.",
-            "cost": "150 грн."
+            "cost": "150 грн.",
+            "painting": "./format/adult-box/acryl.svg"
         },
         {
             "name": "Живопис акрилом",
             "time": "2.5-3 год.",
-            "cost": "150 грн."
+            "cost": "150 грн.",
+            "painting": "./format/adult-box/oil.svg"
         },
         {
             "name": "Акварель/Пастель",
             "time": "2.5-3 год.",
-            "cost": "150 грн."
+            "cost": "150 грн.",
+            "painting": "./format/adult-box/watercolor.svg"
         },
         {
             "name": "Подія місяця",
             "time": "2.5-3 год.",
-            "cost": "150 грн."
+            "cost": "150 грн.",
+            "painting": "./format/adult-box/palette.svg"
         }
     ],
     "chldrenPainting": [
         {
             "weekDay": "Середа",
             "time": "2.5-3 год.",
-            "cost": "150 грн."
+            "cost": "150 грн.",
+            "picture": "./format/children/wednesday.svg"
         },
         {
             "weekDay": "Субота",
             "time": "2.5-3 год.",
-            "cost": "150 грн."
+            "cost": "150 грн.",
+            "picture": "./format/children/saturday.svg"
         }
     ],
     "orderList": [

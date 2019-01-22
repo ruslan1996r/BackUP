@@ -8,7 +8,7 @@ class GalerySliderElement extends Component {
       <div className='gallery'>
         {this.props.gallery.map((item, key) => {
           return (
-            <div>
+            <div className='photo-from-gallery'>
                 <img src={item.photo} alt='галерея' />
             </div>
           )

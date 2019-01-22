@@ -7,19 +7,25 @@ video{
 
 .main-video{
   position: relative;
+  height: 100vh;
 }
 
 .sidebar-and-video{
   display: flex;
   flex-direction: row;
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .sidebar{
+  display: flex;
+  justify-content: space-between;
   margin-top: 40px;
-  margin-right: 30px;
+  flex-basis: 250px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
 }
 
 .video-header{
@@ -29,4 +35,5 @@ video{
   top: 0;
   left: 0;
   object-fit: cover;
+  flex-grow: 1;
 }

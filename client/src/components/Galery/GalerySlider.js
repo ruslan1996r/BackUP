@@ -4,7 +4,7 @@ import GalerySliderElement from './GalerySliderElement';
 class GalerySlider extends Component {
   render() {
     return (
-      <div>
+      <div className='slider-elem'>
         <GalerySliderElement />
       </div>
     );

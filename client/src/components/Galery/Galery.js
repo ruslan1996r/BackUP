@@ -7,7 +7,7 @@ class Galery extends Component {
   render() {
     return (
       <div className='gallery-and-header'>
-        <h2>Галерея</h2>
+        <h2 className='gallery-header'>Галерея</h2>
         <GalerySlider />
       </div>
     );
