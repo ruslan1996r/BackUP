@@ -12,18 +12,23 @@ class ShopSliderElement extends Component {
           return (
 
             <div className='shop-slider-element'>
-              <p>Назва: {item.name}</p>
+              <p>{item.name}</p>
               <ul>
                 <li>
-                <div className="descr">
-                  <p>Вартість: {item.price}</p>
-                  <p>Розрім: {item.size}</p>
-                  <p>Матеріал: {item.material}</p>
-                  <Button buttonName={'ПРИДБАТИ'} />
-                </div>
-                <img src={photo} alt='Картинка'/>
+                  <div className="descr">
+                    <div className='information-of-element'>
+                      <p>Розрім: {item.size}</p>
+                      <p>Матеріал: {item.material}</p>
+                    </div>
+                    <Button
+                      className='shop-more-details'
+                      buttonName={'ПРИДБАТИ'}
+                    />
+                  </div>
+                  <img src={item.image} alt='Картинка' />
                 </li>
               </ul>
+              <p className='element-price'>Ціна: {item.price}</p>
             </div>
 
           )

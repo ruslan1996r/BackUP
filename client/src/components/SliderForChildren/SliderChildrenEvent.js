@@ -11,8 +11,8 @@ class SliderChildrenEvent extends Component {
               <ul>
                 <li>
                   <div className='descr-children-event'>
-                    <p>{item.time}</p>
-                    <p>{item.cost}</p>
+                    <p className='cost-time-p'>{item.time}</p>
+                    <p className='cost-time-p'>{item.cost}</p>
                   </div>
                   <img src={item.picture} alt='Картинка' />
                 </li>

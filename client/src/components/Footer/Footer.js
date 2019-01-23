@@ -7,9 +7,11 @@ import './Footer.css'
 class Footer extends Component {
   render() {
     return (
-      <div>
-        <p>@ 2018 Всі права захищені.</p>
-        <SocialNetwork />
+      <div className='footer-background'>
+      <div className='footer'>
+        <p className='all-right-reserved'>@ 2018 Всі права захищені.</p>
+        <SocialNetwork className='footer-social-network' />
+      </div>
       </div>
     );
   }

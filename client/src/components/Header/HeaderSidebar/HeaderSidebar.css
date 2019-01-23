@@ -24,6 +24,8 @@
 .sidebar-text hr{
   width: 20%;
   height: 1px;
+  border: none;
+  background: black;
 }
 
 .rotate-hr{

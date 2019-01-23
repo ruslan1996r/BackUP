@@ -1,4 +1,57 @@
 .triangle-and-reviews{
   display: flex;
-  flex-direction: row;
+  height: 400px;
+  margin-bottom: 10%;
+}
+
+.reviews-header{
+  font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 20pt;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.reviews-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-slider-element{
+  width: 80%;
+  display: flex;
+  align-items: end;
+}
+
+.slider-element{
+  width: 100%;
+  margin-left: 6%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12pt;
+}
+
+.triangle{
+  position: absolute;
+  height: 400px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.figure{
+  width: 50%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.author{
+  color: rgb(165, 164, 164);
+}
+
+.text-review{
+  margin-bottom: 6%;
+  line-height: 1.5em;
 }

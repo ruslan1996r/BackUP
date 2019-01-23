@@ -16,7 +16,7 @@ class WorldEyeArtist extends Component {
           <h2 className='artist-header'>«СВІТ ОЧИМА ХУДОЖНИКА»</h2>
           <p className='text-in-artist'>Даний курс дає можливість побачити наш дивний світ очима справжнього<br />
             художника, який любить свою роботу і передає своє бачення і натхнення<br />
-            своїм учням. <a href="..">Детальніше</a></p>
+            своїм учням. <a href="..">Детальніше ></a></p>
           <Route path="/RegistrationPage" component={RegistrationPage} />
           <Link to={`/RegistrationPage`}>
             <Button buttonName={'ЗАРЕЄСТРУВАТИСЬ'} />

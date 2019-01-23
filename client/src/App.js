@@ -17,9 +17,9 @@ class App extends Component {
           <Route path="/RegistrationPage" component={RegistrationPage} />
           <Route path="/ShopsPage" component={ShopsPage} />
 
-          <Link to={`/`}>Index</Link><br />
+          {/* <Link to={`/`}>Index</Link><br />
           <Link to={`/RegistrationPage`}>RegistrationPage</Link><br />
-          <Link to={`/ShopsPage`}>ShopsPage</Link><br />
+          <Link to={`/ShopsPage`}>ShopsPage</Link><br /> */}
         </div>
       </Router>
     );

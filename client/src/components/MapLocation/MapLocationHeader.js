@@ -4,10 +4,12 @@ import { connect } from 'react-redux';
 class MapLocationHeader extends Component {
   render() {
     return (
-      <div>
-        <p>{this.props.info.address}</p>
-        <p>{this.props.info.phoneNumber}</p>
-        <p>{this.props.info.email}</p>
+      <div className='container-map'>
+        <div className='map-location-header'>
+          <p>{this.props.info.address}</p>
+          <p>{this.props.info.phoneNumber}</p>
+          <p>{this.props.info.email}</p>
+        </div>
       </div>
     );
   }

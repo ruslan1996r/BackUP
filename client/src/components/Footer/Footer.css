@@ -1,0 +1,37 @@
+.footer-background{
+  width: 100%;
+  height: 150px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.footer-social-network{
+  display: flex;
+  width: 15%;
+  justify-content: space-evenly;
+}
+
+
+.footer-social-network img{
+  width: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-social-network a{
+  margin-right: 20px;
+}
+
+.all-right-reserved{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11pt;
+}

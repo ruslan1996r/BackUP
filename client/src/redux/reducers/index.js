@@ -14,6 +14,7 @@ const initialState = {
     "info": [],
     "orderList": [],
     "gallery": [],
+    "feedback": [],
   }
 }
 

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import Button from '../Button/Button';
+import { BrowserRouter as Route, Link } from 'react-router-dom';
 
 import ShopSlider from './ShopSlider';
+import ShopsPage from '../../pages/ShopsPage/ShopsPage';
+import Button from '../Button/Button';
 
 import './Shop.css'
 
@@ -11,7 +13,10 @@ class Shop extends Component {
       <div className="shop">
         <h2 className='shop-header'>Магазин</h2>
         <ShopSlider />
-        <Button buttonName={'ДЕТАЛЬНІШЕ'} />
+        <Route path="/ShopsPage" component={ShopsPage} />
+        <Link to={`/ShopsPage`}>
+          <Button buttonName={'ДЕТАЛЬНІШЕ'} />
+        </Link>
       </div>
     );
   }

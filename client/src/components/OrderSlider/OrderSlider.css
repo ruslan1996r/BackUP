@@ -41,6 +41,7 @@
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   font-size: 20pt;  
+  letter-spacing: 1px;
 }
 
 .event-name{

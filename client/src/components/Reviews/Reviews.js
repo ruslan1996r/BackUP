@@ -9,9 +9,22 @@ class OrderSlider extends Component {
     return (
       <div className='triangle-and-reviews'>
         <div className='triangle'>
-          triangle
-          </div>
-        <div>
+          <svg
+            width="50%"
+            height="50%"
+            viewBox="0 0 2 2"
+            preserveAspectRatio="none"
+            className='figure'
+          >
+            <polygon
+              fill="#ffdd15"
+              points="0,0 2, 1 0,2"
+            />
+          </svg>
+        </div>
+
+        <div className='reviews-container'>
+          <h2 className='reviews-header'>Відгуки</h2>
           <ReviewSlider />
           <Button buttonName={'ДОДАТИ ВІДГУК'} />
         </div>
@@ -20,4 +33,5 @@ class OrderSlider extends Component {
   }
 }
 
+// сюда передать мап диспатч ту пропс
 export default OrderSlider;

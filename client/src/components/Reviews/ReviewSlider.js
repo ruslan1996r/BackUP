@@ -4,9 +4,7 @@ import ReviewSliderElement from './ReviewSliderElement'
 class ReviewSlider extends Component {
   render() {
     return (
-      <div>
         <ReviewSliderElement />
-      </div>
     );
   }
 }

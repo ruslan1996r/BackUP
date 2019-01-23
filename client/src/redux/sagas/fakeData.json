@@ -74,60 +74,38 @@
     "shop": [
         {
             "name": "Зимній ліс",
-            "price": "700 грн.",
-            "image": "",
+            "price": "1200 грн.",
+            "image": "./format/shop/shop-example1.jpg",
             "size": "20см х 20см",
             "material": "Акрил"
         },
         {
-            "name": "Зимній ліс",
+            "name": "Смачний кавун",
             "price": "700 грн.",
-            "image": "",
+            "image": "./format/shop/shop-example2.jpg",
             "size": "20см х 20см",
             "material": "Акрил"
         },
         {
-            "name": "Зимній ліс",
-            "price": "700 грн.",
-            "image": "",
-            "size": "20см х 20см",
-            "material": "Акрил"
-        },
-        {
-            "name": "Зимній ліс",
-            "price": "700 грн.",
-            "image": "",
-            "size": "20см х 20см",
-            "material": "Акрил"
-        },
-        {
-            "name": "Зимній ліс",
-            "price": "700 грн.",
-            "image": "",
+            "name": "Весняний день",
+            "price": "1420 грн.",
+            "image": "./format/shop/shop-example3.jpg",
             "size": "20см х 20см",
             "material": "Акрил"
         }
     ],
     "feedback": [
         {
-            "author": "Yulia",
+            "author": "Оксана",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         },
         {
-            "author": "Yulia",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "author": "Надежда",
+            "text": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
         },
         {
-            "author": "Yulia",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            "author": "Yulia",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            "author": "Yulia",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "author": "Юлія",
+            "text": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet."
         }
     ],
     "info": {
