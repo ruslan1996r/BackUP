@@ -12,8 +12,13 @@ class HeaderVideo extends Component {
           autoPlay
           muted 
           loop="loop"
+          // poster='./post.jpg'
         >
-          <source src="./formatVideo.mp4" type="video/mp4"></source>
+          <source 
+          src="./formatVideo.mp4" 
+          type="video/mp4"
+          >
+          </source>
           {/* <source src="./bg/daisy-stock-webm-video.webm" type="video/webm"></source> */}
         </video>
         <HeaderVideoText />

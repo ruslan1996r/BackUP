@@ -1,0 +1,73 @@
+{
+  "test": "жопа",
+  "goods": [
+    {
+      "id": "5c472931e4467b12e18bc30f",
+      "name": "My New Cool Picture 2",
+      "price": 400,
+      "size": "30x30",
+      "material": "Very Крутой",
+      "image": "./format/shop/shop-example3.jpg"
+    },
+    {
+      "id": "5c472932e4467b12e18bc310",
+      "name": "My New Cool Picture 2",
+      "price": 400,
+      "size": "30x30",
+      "material": "Very Крутой",
+      "image": "./format/shop/shop-example2.jpg"
+    },
+    {
+      "id": "5c472933e4467b12e18bc311",
+      "name": "My New Cool Picture 2",
+      "price": 400,
+      "size": "30x30",
+      "material": "Very Крутой",
+      "image": "./format/shop/shop-example1.jpg"
+    },
+    {
+      "id": "5c472933e4467b12e18bc312",
+      "name": "My New Cool Picture 2",
+      "price": 400,
+      "size": "30x30",
+      "material": "Very Крутой",
+      "image": "./format/shop/shop-example3.jpg"
+    },
+    {
+      "id": "5c472934e4467b12e18bc313",
+      "name": "My New Cool Picture 2",
+      "price": 400,
+      "size": "30x30",
+      "material": "Very Крутой",
+      "image": "./format/shop/shop-example2.jpg"
+    },
+    {
+      "id": "5c472934e4467b12e18bc314",
+      "name": "My New Cool Picture 2",
+      "price": 400,
+      "size": "30x30",
+      "material": "Very Крутой",
+      "image": "./format/shop/shop-example1.jpg"
+    },
+    {
+      "id": "5c472935e4467b12e18bc315",
+      "name": "My New Cool Picture 2",
+      "price": 400,
+      "size": "30x30",
+      "material": "Very Крутой",
+      "image": "./format/shop/shop-example3.jpg"
+    }
+  ],
+  "phone": "+380661497902",
+  "regPictures": [
+    "./format/shop/shop-example1.jpg",
+    "./format/shop/shop-example2.jpg",
+    "./format/shop/shop-example3.jpg",
+    "./format/shop/shop-example1.jpg",
+    "./format/shop/shop-example2.jpg",
+    "./format/shop/shop-example3.jpg",
+    "./format/shop/shop-example1.jpg",
+    "./format/shop/shop-example2.jpg",
+    "./format/shop/shop-example3.jpg"
+  ]
+}

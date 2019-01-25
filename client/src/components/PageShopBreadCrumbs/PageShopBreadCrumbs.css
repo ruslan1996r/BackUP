@@ -1,0 +1,28 @@
+.bread-crumbs{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: 'Roboto Condensed', sans-serif;
+  cursor: pointer;
+}
+
+.bread-crumbs-text{
+  text-decoration: underline;
+  color: rgb(117, 117, 117);
+}
+
+.bread-crumbs a{
+  text-decoration: none;
+  color: black;
+}
+
+.crumbs{
+  width: 80%;
+  display: flex;
+}
+
+.empty-container{
+  flex-basis: 250px;
+}

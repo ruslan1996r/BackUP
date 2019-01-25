@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
+import logger from 'redux-logger';
 
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux'
@@ -15,8 +16,9 @@ const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(
   rootReducer,
-  composeEnhancers(applyMiddleware(sagaMiddleware))
+  composeEnhancers(applyMiddleware(sagaMiddleware,logger))
 );
+sagaMiddleware.run(rootSaga);
 
 ReactDOM.render(
   <Provider store={store}>
@@ -29,6 +31,6 @@ ReactDOM.render(
 
 serviceWorker.unregister();
 
-sagaMiddleware.run(rootSaga);
+
 
 module.hot.accept();

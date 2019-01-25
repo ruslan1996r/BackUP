@@ -1,5 +1,5 @@
-.opacity-background{
-  background-color: #FFE42C;
+.opacity-background {
+  background-color: #ffe42c;
   position: absolute;
   opacity: 0.8;
   width: 100.1%;
@@ -7,7 +7,7 @@
   top: 0;
 }
 
-.text{
+.text {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -19,32 +19,32 @@
   flex-direction: column;
   align-items: center;
 }
-.main{
+.main {
   width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
 }
 
-.main-text{
+.main-text {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.top-header{
+.top-header {
   display: flex;
   width: 100%;
   margin-top: 5%;
   font-family: 'Roboto Condensed', sans-serif;
 }
-.no-burger{
+.no-burger {
   display: flex;
   justify-content: space-between;
   width: 40%;
   margin-left: 10%;
 }
-.burger{
+.burger {
   width: 60%;
   height: 20px;
   display: flex;
@@ -52,18 +52,19 @@
   margin-right: 10%;
 }
 
-.header-number{
+.header-number {
   padding-right: 20px;
 }
 
-.text-on-video{
+.text-on-video {
   font-size: 14px;
   text-align: right;
   margin-bottom: 5%;
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
 }
 
-.header-video{
+.header-video {
   margin: 0;
   margin-bottom: 5%;
   font-family: 'Roboto Condensed', sans-serif;

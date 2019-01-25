@@ -1,0 +1,38 @@
+.header-container{
+  width: 100%;
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-shop-header{
+  height: 100%;
+  flex-basis: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.page-shop-header img{
+  height: 70%;
+}
+
+.calendar-and-menu-container{
+  height: 100%;
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  background-color: #ffdd15;
+  align-items: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.calendar-and-menu{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+}

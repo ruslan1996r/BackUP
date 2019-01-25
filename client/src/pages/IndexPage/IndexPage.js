@@ -1,7 +1,6 @@
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-
-import React, { Component } from 'react';
 import Header from '../../components/Header/Header/Header'
 import SliderForAdults from '../../components/SliderForAdults/SliderForAdults'
 import SliderForChildren from '../../components/SliderForChildren/SliderForChildren'
@@ -15,10 +14,10 @@ import Footer from '../../components/Footer/Footer'
 
 import './IndexPage.css'
 
-import {init} from '../../redux/actions/actionTypes'; //actionCreator
+import { init } from '../../redux/actions/actionTypes'; //actionCreator
 
 class IndexPage extends Component {
-  componentDidMount(){ //запускает actionCreator
+  componentDidMount() { //запускает actionCreator
     this.props.initData();
   }
   render() {
@@ -26,7 +25,7 @@ class IndexPage extends Component {
     console.log("d: ", d);
     return (
       <div className='mainWindow'>
-      {d.testjson} 
+        {d.testjson}
         <Header />
         <SliderForAdults />
         <SliderForChildren />
@@ -42,7 +41,7 @@ class IndexPage extends Component {
   }
 }
 
-const mapStateToProps = (state) => { 
+const mapStateToProps = (state) => {
   return {
     indexData: state.indexData //данные для IndexPage
   };
