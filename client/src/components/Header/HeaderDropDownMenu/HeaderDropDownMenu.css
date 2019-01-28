@@ -1,21 +1,22 @@
-span{
-  display:block;
+span {
+  display: block;
   height: 2px;
   background: black;
   width: 24px;
   border-radius: 1px;
 }
-span:nth-child(2){
+span:nth-child(2) {
   width: 18px;
 }
 
-span:nth-child(3){
+span:nth-child(3) {
   width: 10px;
 }
 
-.burger-icon{
+.burger-icon {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-around;
+  cursor: pointer;
 }

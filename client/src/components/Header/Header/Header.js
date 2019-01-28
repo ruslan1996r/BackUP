@@ -3,18 +3,19 @@ import React, { Component } from 'react';
 import HeaderVideo from '../HeaderVideo/HeaderVideo';
 import HeaderSidebar from '../HeaderSidebar/HeaderSidebar';
 
-
-import './Header.css'
-
+import './Header.css';
 
 class Header extends Component {
   render() {
     return (
-      <div className='sidebar-and-video'>
-        <div className='sidebar'>
+      <div
+        id="sidebar-and-video-id"
+        className="sidebar-and-video"
+      >
+        <div className="sidebar">
           <HeaderSidebar />
         </div>
-        <div className='video-header'>
+        <div className="video-header">
           <HeaderVideo />
         </div>
       </div>

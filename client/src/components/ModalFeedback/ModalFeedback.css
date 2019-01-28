@@ -1,0 +1,11 @@
+#feedback-form {
+  height: 370px;
+}
+
+.popup-text-area-element {
+  width: 100%;
+  font-family: Roboto;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}

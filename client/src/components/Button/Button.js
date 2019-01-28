@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 
-import './Button.css'
+import './Button.css';
 
 class Button extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.props.toTop} className={this.props.className}>
+        <button
+          onClick={this.props.onClick}
+          className={this.props.className}
+          type={this.props.type}
+          form={this.props.form}
+        >
           {this.props.buttonName}
         </button>
       </div>

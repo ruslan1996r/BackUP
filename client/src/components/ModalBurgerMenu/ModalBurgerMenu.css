@@ -1,0 +1,17 @@
+.burger-dropdown-menu-close {
+  cursor: pointer;
+}
+
+.opacity-on-sidebar {
+}
+
+.main-background-container {
+}
+
+.burger-menu-main-container {
+}
+
+.burger-menu-links {
+  display: flex;
+  flex-direction: column;
+}

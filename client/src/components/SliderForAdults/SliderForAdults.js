@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Route, Link } from 'react-router-dom';
+import {
+  BrowserRouter as Route,
+  Link,
+} from 'react-router-dom';
 
 import RegistrationPage from '../../pages/RegistrationPage/RegistrationPage';
 import SliderAdultsEvent from './SlideAdultsEvent';
@@ -10,10 +13,18 @@ import './SliderForAdults.css';
 class SliderForAdults extends Component {
   render() {
     return (
-      <div className="slider-for-adults">
-        <h2 className="adults-header">Живопис для дорослих</h2>
+      <div
+        id="slider-for-adults-id"
+        className="slider-for-adults"
+      >
+        <h2 className="adults-header">
+          Живопис для дорослих
+        </h2>
         <SliderAdultsEvent />
-        <Route path="/RegistrationPage" component={RegistrationPage} />
+        <Route
+          path="/RegistrationPage"
+          component={RegistrationPage}
+        />
         <Link to={`/RegistrationPage`}>
           <Button buttonName={'ЗАРЕЄСТРУВАТИСЬ'} />
         </Link>

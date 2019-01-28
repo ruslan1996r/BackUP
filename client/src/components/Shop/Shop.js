@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Route, Link } from 'react-router-dom';
+import {
+  BrowserRouter as Route,
+  Link,
+} from 'react-router-dom';
 
 import ShopSlider from './ShopSlider';
 import ShopsPage from '../../pages/ShopsPage/ShopsPage';
@@ -14,12 +17,15 @@ class Shop extends Component {
 
   render() {
     return (
-      <div className="shop">
+      <div id="shop-id" className="shop">
         <h2 className="shop-header">Магазин</h2>
         <ShopSlider />
         <Route path="/ShopsPage" component={ShopsPage} />
         <Link to={`/ShopsPage`}>
-          <Button toTop={this.toTop} buttonName={'ДЕТАЛЬНІШЕ'} />
+          <Button
+            onClick={this.toTop}
+            buttonName={'ДЕТАЛЬНІШЕ'}
+          />
         </Link>
       </div>
     );
