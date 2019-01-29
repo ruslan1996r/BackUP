@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
+// import { calendarImg } from './format/header/calendar.svg';
 
-import './HeaderCalendar.css'
+import './HeaderCalendar.css';
 
 class HeaderCalendar extends Component {
   render() {
     return (
-      <div>
-        КАЛЕНДАР ПОДІЙ
+      <div className="calendar-and-svg">
+        <p>КАЛЕНДАР ПОДІЙ</p>
+        <img src="./format/header/calendar.svg" />
       </div>
     );
   }

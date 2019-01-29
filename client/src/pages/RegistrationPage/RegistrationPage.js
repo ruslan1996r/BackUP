@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 
 import PageShopHeader from '../../components/PageShopHeader/PageShopHeader';
 import PageShopBreadCrumbs from '../../components/PageShopBreadCrumbs/PageShopBreadCrumbs';

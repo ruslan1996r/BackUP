@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Route, Link } from 'react-router-dom';
+import {
+  BrowserRouter as Route,
+  Link,
+} from 'react-router-dom';
 
 import IndexPage from '../../pages/IndexPage/IndexPage';
-import ShopsPage from '../../pages/ShopsPage/ShopsPage';
 
 import './PageShopBreadCrumbs.css';
 
@@ -16,7 +18,10 @@ class PageShopBreadCrumbs extends Component {
           <Link to={`/`}>
             <p className="route-to-main">Головна</p>
           </Link>
-          /<p className="bread-crumbs-text">{this.props.pageName}</p>
+          /
+          <p className="bread-crumbs-text">
+            {this.props.pageName}
+          </p>
         </div>
       </div>
     );

@@ -40,16 +40,19 @@
 }
 .no-burger {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  width: 40%;
+  width: 350px;
   margin-left: 10%;
 }
 .burger {
-  width: 60%;
   height: 20px;
   display: flex;
   justify-content: flex-end;
   margin-right: 10%;
+  margin-top: 3.5%;
+  position: absolute;
+  width: 90%;
 }
 
 .header-number {
@@ -70,4 +73,8 @@
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   font-size: 30pt;
+}
+
+.z-index-button {
+  z-index: 100;
 }

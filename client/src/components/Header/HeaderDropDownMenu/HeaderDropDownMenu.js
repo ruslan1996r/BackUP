@@ -26,18 +26,24 @@ class HeaderDropDownMenu extends Component {
 
   render() {
     return (
-      <div className="burger">
-        <div
-          className="burger-icon"
-          onClick={() => {
-            this.handleOpenBurgerModal();
-          }}
-        >
-          <span className="1" />
-          <span className="2" />
-          <span className="3" />
+      <div className="burger-container">
+        <div className="burger">
+          <div
+            style={{
+              display: this.state.isBurgerModalVisible
+                ? 'none'
+                : 'flex',
+            }}
+            className="burger-icon"
+            onClick={() => {
+              this.handleOpenBurgerModal();
+            }}
+          >
+            <span className="1" />
+            <span className="2" />
+            <span className="3" />
+          </div>
         </div>
-        {}
         <ModalBurgerMenu
           visible={this.state.isBurgerModalVisible}
           onClose={() => {

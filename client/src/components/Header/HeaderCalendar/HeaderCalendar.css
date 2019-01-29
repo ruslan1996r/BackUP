@@ -1,0 +1,7 @@
+.calendar-and-svg {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  cursor: pointer;
+  z-index: 100;
+}

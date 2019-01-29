@@ -19,4 +19,20 @@ span:nth-child(3) {
   align-items: flex-end;
   justify-content: space-around;
   cursor: pointer;
+  height: 100%;
+}
+
+.burger-container {
+  width: 100%;
+  height: 100%;
+}
+
+.burger {
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10%;
+  margin-top: 3.5%;
+  position: absolute;
+  /* width: 90%; */
 }

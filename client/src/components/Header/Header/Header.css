@@ -1,24 +1,25 @@
-video{
+video {
   position: relative;
   top: 0;
   left: 0;
   object-fit: cover;
 }
 
-.main-video{
+.main-video {
   position: relative;
   height: 100vh;
 }
 
-.sidebar-and-video{
+.sidebar-and-video {
   display: flex;
   flex-direction: row;
   height: 100vh;
   width: 100%;
   justify-content: space-between;
+  position: relative;
 }
 
-.sidebar{
+.sidebar {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
@@ -28,7 +29,7 @@ video{
   align-items: center;
 }
 
-.video-header{
+.video-header {
   width: 80%;
   height: 80%;
   position: relative;
@@ -36,4 +37,10 @@ video{
   left: 0;
   object-fit: cover;
   flex-grow: 1;
+}
+
+.burger-drop-down-menu-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }

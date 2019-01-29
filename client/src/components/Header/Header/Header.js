@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import HeaderVideo from '../HeaderVideo/HeaderVideo';
 import HeaderSidebar from '../HeaderSidebar/HeaderSidebar';
+import HeaderDropDownMenu from '../HeaderDropDownMenu/HeaderDropDownMenu';
 
 import './Header.css';
 
@@ -17,6 +18,9 @@ class Header extends Component {
         </div>
         <div className="video-header">
           <HeaderVideo />
+        </div>
+        <div className="burger-drop-down-menu-container">
+          <HeaderDropDownMenu />
         </div>
       </div>
     );
