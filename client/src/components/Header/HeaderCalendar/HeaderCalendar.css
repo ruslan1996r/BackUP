@@ -5,3 +5,8 @@
   cursor: pointer;
   z-index: 100;
 }
+
+.calendar-and-svg img {
+  width: 25px;
+  margin-left: 10px;
+}
