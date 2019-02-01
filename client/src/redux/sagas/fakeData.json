@@ -1,116 +1,148 @@
 {
-    "testjson": "",
-    "phoneNumber": "+38 (098) 92-92-58",
-    "adultPainting": [
-        {
-            "name": "Живопис олією",
-            "time": "2.5-3 год.",
-            "cost": "150 грн.",
-            "painting": "./format/adult-box/acryl.svg"
-        },
-        {
-            "name": "Живопис акрилом",
-            "time": "2.5-3 год.",
-            "cost": "150 грн.",
-            "painting": "./format/adult-box/oil.svg"
-        },
-        {
-            "name": "Акварель/Пастель",
-            "time": "2.5-3 год.",
-            "cost": "150 грн.",
-            "painting": "./format/adult-box/watercolor.svg"
-        },
-        {
-            "name": "Подія місяця",
-            "time": "2.5-3 год.",
-            "cost": "150 грн.",
-            "painting": "./format/adult-box/palette.svg"
-        }
-    ],
-    "chldrenPainting": [
-        {
-            "weekDay": "Середа",
-            "time": "2.5-3 год.",
-            "cost": "150 грн.",
-            "picture": "./format/children/wednesday.svg"
-        },
-        {
-            "weekDay": "Субота",
-            "time": "2.5-3 год.",
-            "cost": "150 грн.",
-            "picture": "./format/children/saturday.svg"
-        }
-    ],
-    "orderList": [
-        {
-            "name": "Індивідуальні заняття",
-            "img": "./format/offer/offer-lesson.svg"
-        },
-        {
-            "name": "Корпоративні майтер-класи",
-            "img": "./format/offer/offer-master_class.svg"
-        },
-        {
-            "name": "Картини на замовлення",
-            "img": "./format/offer/offer-certificate.svg"
-        },
-        {
-            "name": "Подарункові сертифікати",
-            "img": "./format/offer/offer-lesson.svg"
-        }
-    ],
-    "painterEyes": {
-        "title": "Світ очима художника",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  "testjson": "",
+  "phoneNumber": "+38 (098) 92-92-58",
+  "adultPainting": [
+    {
+      "name": "Живопис олією",
+      "time": "2.5-3 год.",
+      "cost": "150 грн.",
+      "painting": "./format/adult-box/acryl.svg"
     },
-    "gallery": [
-        {
-            "photo": "./format/gallery/gallery-example1.jpg"
-        },
-        {
-            "photo": "./format/gallery/gallery-example2.jpg"
-        }
-    ],
-    "shop": [
-        {
-            "name": "Зимній ліс",
-            "price": "1200 грн.",
-            "image": "./format/shop/shop-example1.jpg",
-            "size": "20см х 20см",
-            "material": "Акрил"
-        },
-        {
-            "name": "Смачний кавун",
-            "price": "700 грн.",
-            "image": "./format/shop/shop-example2.jpg",
-            "size": "20см х 20см",
-            "material": "Акрил"
-        },
-        {
-            "name": "Весняний день",
-            "price": "1420 грн.",
-            "image": "./format/shop/shop-example3.jpg",
-            "size": "20см х 20см",
-            "material": "Акрил"
-        }
-    ],
-    "feedback": [
-        {
-            "author": "Оксана",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            "author": "Надежда",
-            "text": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
-        },
-        {
-            "author": "Юлія",
-            "text": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet."
-        }
-    ],
-    "info": {
-        "address": "м. Вінниця, вул Червонохрестівська 12",
-        "phoneNumber": "+38 (098) 92-92-58",
-        "email": "the.format.vn@gmail.com"
+    {
+      "name": "Живопис акрилом",
+      "time": "2.5-3 год.",
+      "cost": "150 грн.",
+      "painting": "./format/adult-box/oil.svg"
+    },
+    {
+      "name": "Акварель/Пастель",
+      "time": "2.5-3 год.",
+      "cost": "150 грн.",
+      "painting": "./format/adult-box/watercolor.svg"
+    },
+    {
+      "name": "Подія місяця",
+      "time": "2.5-3 год.",
+      "cost": "150 грн.",
+      "painting": "./format/adult-box/palette.svg"
     }
+  ],
+  "chldrenPainting": [
+    {
+      "weekDay": "Середа",
+      "time": "2.5-3 год.",
+      "cost": "150 грн.",
+      "picture": "./format/children/wednesday.svg"
+    },
+    {
+      "weekDay": "Субота",
+      "time": "2.5-3 год.",
+      "cost": "150 грн.",
+      "picture": "./format/children/saturday.svg"
+    }
+  ],
+  "orderList": [
+    {
+      "name": "Індивідуальні заняття",
+      "img": "./format/offer/offer-lesson.svg"
+    },
+    {
+      "name": "Корпоративні майтер-класи",
+      "img": "./format/offer/offer-master_class.svg"
+    },
+    {
+      "name": "Картини на замовлення",
+      "img": "./format/offer/offer-certificate.svg"
+    },
+    {
+      "name": "Подарункові сертифікати",
+      "img": "./format/offer/offer-lesson.svg"
+    }
+  ],
+  "painterEyes": {
+    "title": "Світ очима художника",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  "gallery": [
+    {
+      "photo": "./format/gallery/gallery-example1.jpg"
+    },
+    {
+      "photo": "./format/gallery/gallery-example2.jpg"
+    },
+    {
+      "photo": "./format/gallery/gallery-example1.jpg"
+    },
+    {
+      "photo": "./format/gallery/gallery-example2.jpg"
+    }
+  ],
+  "shop": [
+    {
+      "name": "Зимній ліс",
+      "price": "1200 грн.",
+      "image": "./format/shop/shop-example1.jpg",
+      "size": "20см х 20см",
+      "material": "Акрил"
+    },
+    {
+      "name": "Смачний кавун",
+      "price": "700 грн.",
+      "image": "./format/shop/shop-example2.jpg",
+      "size": "20см х 20см",
+      "material": "Акрил"
+    },
+    {
+      "name": "Весняний день",
+      "price": "1420 грн.",
+      "image": "./format/shop/shop-example3.jpg",
+      "size": "20см х 20см",
+      "material": "Акрил"
+    },
+    {
+      "name": "Смачний кавун",
+      "price": "700 грн.",
+      "image": "./format/shop/shop-example2.jpg",
+      "size": "20см х 20см",
+      "material": "Акрил"
+    },
+    {
+      "name": "Зимній ліс",
+      "price": "1200 грн.",
+      "image": "./format/shop/shop-example1.jpg",
+      "size": "20см х 20см",
+      "material": "Акрил"
+    }
+  ],
+  "feedback": [
+    {
+      "author": "Оксана",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "author": "Надежда",
+      "text": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+    },
+    {
+      "author": "Юлія",
+      "text": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet."
+    },
+    {
+      "author": "Андрей",
+      "text": "Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat."
+    },
+    {
+      "author": "Владислав",
+      "text": "Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit."
+    },
+    {
+      "author": "Варнава",
+      "text": " Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur."
+    }
+  ],
+  "info": {
+    "address": "м. Вінниця, вул Червонохрестівська 12",
+    "phoneNumber": "+38 (098) 92-92-58",
+    "email": "the.format.vn@gmail.com"
+  }
 }

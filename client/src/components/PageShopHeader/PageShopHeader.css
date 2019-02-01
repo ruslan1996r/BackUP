@@ -1,38 +1,38 @@
-.header-container{
+.header-container {
   width: 100%;
-  height: 110px;
+  height: 120px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.page-shop-header{
+.page-shop-header {
   height: 100%;
-  flex-basis: 250px;
+  flex-basis: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.page-shop-header img{
+.page-shop-header img {
   height: 70%;
 }
 
-.calendar-and-menu-container{
+.calendar-and-menu-container {
   height: 100%;
   display: flex;
   width: 80%;
-  justify-content: space-evenly;
   background-color: #ffdd15;
   align-items: center;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.calendar-and-menu{
-  width: 40%;
+.calendar-and-menu {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  width: 350px;
   margin-left: 10%;
 }

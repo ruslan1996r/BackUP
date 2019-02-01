@@ -26,7 +26,10 @@ class SliderForAdults extends Component {
           component={RegistrationPage}
         />
         <Link to={`/RegistrationPage`}>
-          <Button buttonName={'ЗАРЕЄСТРУВАТИСЬ'} />
+          <Button
+            className="main-window-registration-button"
+            buttonName={'ЗАРЕЄСТРУВАТИСЬ'}
+          />
         </Link>
       </div>
     );

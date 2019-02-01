@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import ReviewSliderElement from './ReviewSliderElement'
+import SimpleSlider from './SimpleSlider';
 
 class ReviewSlider extends Component {
   render() {
-    return (
-        <ReviewSliderElement />
-    );
+    return <SimpleSlider />;
   }
 }
 

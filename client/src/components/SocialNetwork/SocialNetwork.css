@@ -1,0 +1,14 @@
+.footer-hover {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  background: black;
+  border-radius: 50%;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.footer-hover:hover {
+  background: #ffdd15;
+}

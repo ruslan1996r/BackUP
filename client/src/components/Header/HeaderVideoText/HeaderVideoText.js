@@ -41,7 +41,10 @@ class HeaderVideoText extends Component {
               />
               <div className="z-index-button">
                 <Link to={`/RegistrationPage`}>
-                  <Button buttonName={'ЗАРЕЄСТРУВАТИСЬ'} />
+                  <Button
+                    className="main-window-registration-button"
+                    buttonName={'ЗАРЕЄСТРУВАТИСЬ'}
+                  />
                 </Link>
               </div>
             </div>

@@ -20,11 +20,7 @@ class App extends Component {
             path="/RegistrationPage"
             component={RegistrationPage}
           />
-          <Route path="/ShopsPage" component={ShopsPage} />
-
-          {/* <Link to={`/`}>Index</Link><br />
-          <Link to={`/RegistrationPage`}>RegistrationPage</Link><br />
-          <Link to={`/ShopsPage`}>ShopsPage</Link><br /> */}
+          <Route path="/shop" component={ShopsPage} />
         </div>
       </Router>
     );

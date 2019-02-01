@@ -1,4 +1,4 @@
-.bread-crumbs{
+.bread-crumbs {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -8,21 +8,21 @@
   cursor: pointer;
 }
 
-.bread-crumbs-text{
+.bread-crumbs-text {
   text-decoration: underline;
   color: rgb(117, 117, 117);
 }
 
-.bread-crumbs a{
+.bread-crumbs a {
   text-decoration: none;
   color: black;
 }
 
-.crumbs{
+.crumbs {
   width: 80%;
   display: flex;
 }
 
-.empty-container{
-  flex-basis: 250px;
+.empty-container {
+  flex-basis: 300px;
 }

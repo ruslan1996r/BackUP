@@ -4,6 +4,8 @@ import {
   Link,
 } from 'react-router-dom';
 
+import wwad from '../../format/shop/left-arrow.svg';
+
 import ShopSlider from './ShopSlider';
 import ShopsPage from '../../pages/ShopsPage/ShopsPage';
 import Button from '../Button/Button';
@@ -20,8 +22,8 @@ class Shop extends Component {
       <div id="shop-id" className="shop">
         <h2 className="shop-header">Магазин</h2>
         <ShopSlider />
-        <Route path="/ShopsPage" component={ShopsPage} />
-        <Link to={`/ShopsPage`}>
+        <Route path="/shop" component={ShopsPage} />
+        <Link to={`/shop`}>
           <Button
             onClick={this.toTop}
             buttonName={'ДЕТАЛЬНІШЕ'}
