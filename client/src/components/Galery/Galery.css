@@ -83,3 +83,14 @@
   left: -25px;
   height: 50%;
 }
+
+@media screen and (max-width: 479px) {
+  .slick-list {
+    width: 450px;
+  }
+
+  .gallery .slick-prev:before,
+  .gallery .slick-next:before {
+    display: none;
+  }
+}

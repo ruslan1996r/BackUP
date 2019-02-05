@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Dialog from '@material-ui/core/Dialog';
+import { FormValidation } from 'calidation';
 
 import Button from '../Button/Button';
 
@@ -16,6 +17,16 @@ class ModalArtOrder extends Component {
       address: '',
       email: '',
     };
+
+    this.config = {
+      name: {
+        isRequired: "Введіть ім'я",
+        isMinLength: {
+          message: '',
+          length: 2,
+        },
+      },
+    };
   }
 
   handleChange = (evt) => {
@@ -23,8 +34,8 @@ class ModalArtOrder extends Component {
     //помогает обрабатывать множество инпутов одной функцией, принимая лишь атрибут инпута NAME и VALUE
   };
 
-  handleSubmit = (evt) => {
-    evt.preventDefault();
+  handleSubmit = (errors, fields, isValid) => {
+    // evt.preventDefault();
     let { name, phone, email, address } = this.state;
     this.setState({
       name: '',
@@ -47,71 +58,93 @@ class ModalArtOrder extends Component {
         <p className="modal-window-header-picture">
           Картина: {this.props.artName}
         </p>
-        <form
+        {/* <form
           id="art-order-form"
           onSubmit={this.handleSubmit}
+        > */}
+        <FormValidation
+          id="art-order-form"
+          onSubmit={this.handleSubmit}
+          config={this.config}
         >
-          <label className="popup-window-element">
-            <p className="popup-element-header-styles">
-              Ваше ім'я:<p className>*</p>
-            </p>
-            <input
-              className="popup-input-element"
-              type="text"
-              name="name"
-              placeholder="Введіть Ваше ім'я"
-              value={this.state.name}
-              onChange={this.handleChange}
-            />
-          </label>
-          <label className="popup-window-element">
-            <p className="popup-element-header-styles">
-              Ваш e-mail:<p>*</p>
-            </p>
-            <input
-              className="popup-input-element"
-              type="mail"
-              name="email"
-              placeholder="Введіть Ваш e-mail"
-              value={this.state.email}
-              onChange={this.handleChange}
-            />
-          </label>
-          <label className="popup-window-element">
-            <p className="popup-element-header-styles">
-              Ваш номер телефону:<p>*</p>
-            </p>
-            <input
-              className="popup-input-element"
-              type="tel"
-              name="phone"
-              placeholder="Введіть Ваш телефон"
-              value={this.state.phone}
-              onChange={this.handleChange}
-            />
-          </label>
-          <label className="popup-window-element">
-            <p className="popup-element-header-styles">
-              Ваша адреса:<p>*</p>
-            </p>
-            <input
-              className="popup-input-element"
-              type="text"
-              name="address"
-              placeholder="Введіть Вашу адресу"
-              value={this.state.address}
-              onChange={this.handleChange}
-            />
-          </label>
-          <div className="popup-button-container">
-            <Button
-              className="popup-shop-button"
-              type="submit"
-              form="art-order-form"
-              buttonName="ВІДПРАВИТИ"
-            />
-          </div>
-        </form>
+          {({ fields, errors, submitted }) => (
+            <>
+              <label className="popup-window-element">
+                <p className="popup-element-header-styles">
+                  Ваше ім'я:<p className>*</p>
+                  {submitted && errors.fullName && (
+                    <p>{errors.fullName}</p>
+                  )}
+                </p>
+                <input
+                  className="popup-input-element"
+                  type="text"
+                  name="name"
+                  placeholder="Введіть Ваше ім'я"
+                  value={fields.name}
+                  // onChange={this.handleChange}
+                />
+              </label>
+              <label className="popup-window-element">
+                <p className="popup-element-header-styles">
+                  Ваш e-mail:<p>*</p>
+                  {submitted && errors.email && (
+                    <p>{errors.email}</p>
+                  )}
+                </p>
+                <input
+                  className="popup-input-element"
+                  type="mail"
+                  name="email"
+                  placeholder="Введіть Ваш e-mail"
+                  value={fields.email}
+                  // onChange={this.handleChange}
+                />
+              </label>
+              <label className="popup-window-element">
+                <p className="popup-element-header-styles">
+                  Ваш номер телефону:<p>*</p>
+                  {submitted && errors.phone && (
+                    <p>{errors.phone}</p>
+                  )}
+                </p>
+                <input
+                  className="popup-input-element"
+                  type="tel"
+                  name="phone"
+                  placeholder="Введіть Ваш телефон"
+                  value={fields.phone}
+                  // onChange={this.handleChange}
+                />
+              </label>
+              <label className="popup-window-element">
+                <p className="popup-element-header-styles">
+                  Ваша адреса:<p>*</p>
+                  {submitted && errors.address && (
+                    <p>{errors.address}</p>
+                  )}
+                </p>
+                <input
+                  className="popup-input-element"
+                  type="text"
+                  name="address"
+                  placeholder="Введіть Вашу адресу"
+                  value={fields.address}
+                  // onChange={this.handleChange}
+                />
+              </label>
+              <div className="popup-button-container">
+                <Button
+                  className="popup-shop-button"
+                  type="submit"
+                  form="art-order-form"
+                  buttonName="ВІДПРАВИТИ"
+                />
+              </div>
+            </>
+          )}
+          {/* </form> */}
+        </FormValidation>
       </div>
     );
   };

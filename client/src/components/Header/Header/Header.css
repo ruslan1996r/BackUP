@@ -20,7 +20,6 @@ video {
 }
 
 .sidebar {
-  display: flex;
   justify-content: space-between;
   margin-top: 40px;
   flex-basis: 250px;
@@ -43,4 +42,22 @@ video {
   position: absolute;
   height: 100%;
   width: 100%;
+}
+
+@media screen and (max-width: 479px) {
+  .sidebar {
+    display: none;
+  }
+  .video-header {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-video {
+    height: auto;
+  }
+
+  .img-border {
+    display: none;
+  }
 }

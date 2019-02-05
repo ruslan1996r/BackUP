@@ -13,6 +13,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 11pt;
   line-height: 1.5em;
+  text-align: justify;
 }
 
 .artist-main-header {
@@ -72,4 +73,14 @@
   cursor: pointer;
   text-decoration: underline;
   -webkit-user-select: none;
+}
+
+@media screen and (max-width: 479px) {
+  .img-border {
+    display: none;
+  }
+
+  .text-in-artist {
+    width: 300px;
+  }
 }

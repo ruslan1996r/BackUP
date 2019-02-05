@@ -61,9 +61,10 @@ label {
 
 .input-styles {
   width: 100%;
+  border: 1px solid rgb(104, 104, 104);
+  border-radius: 4px;
   height: 40px;
   padding-left: 10px;
-  color: rgb(104, 104, 104);
 }
 .registration-area-element ::placeholder {
   font-family: 'Roboto';

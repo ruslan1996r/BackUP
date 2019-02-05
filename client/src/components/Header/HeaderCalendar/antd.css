@@ -5259,6 +5259,7 @@ a.ant-btn-sm {
   width: auto;
   left: auto;
   bottom: auto;
+  overflow: hidden;
 }
 .ant-fullcalendar-disabled-cell .ant-fullcalendar-date,
 .ant-fullcalendar-disabled-cell .ant-fullcalendar-date:hover {
