@@ -1,14 +1,93 @@
 import React, { Component } from 'react';
-// import { calendarImg } from './format/header/calendar.svg';
-
+import CalendarPage from './calendar.jsx';
 import './HeaderCalendar.css';
+import './CustomStyles.css';
+import Dialog from '@material-ui/core/Dialog';
+import Slide from '@material-ui/core/Slide';
+
+function Transition(props) {
+  return <Slide direction="up" {...props} />;
+}
 
 class HeaderCalendar extends Component {
+  constructor(props) {
+    super(props);
+    // this.getListData = this.getListData.bind(this);
+    // this.dateCellRender = this.dateCellRender.bind(this);
+    // this.getMonthData = this.getMonthData.bind(this);
+    // this.monthCellRender = this.monthCellRender.bind(this);
+
+    this.state = {
+      displayCalendar: true,
+      open: false,
+      listData: [
+        {
+          day: 2,
+          month: 0,
+          year: 2019,
+          type: 'warning',
+          content: 'Події на сьогодні:',
+        },
+        {
+          day: 2,
+          month: 0,
+          year: 2019,
+          type: 'warning',
+          content: '4',
+        },
+      ],
+    };
+  }
+  handleClickOpen = () => {
+    this.setState({ open: true });
+  };
+
+  handleClose = () => {
+    this.setState({ open: false });
+  };
+  handleShowCalendar = () => {
+    this.setState({
+      open: true,
+    });
+  };
+  handleShowInput = () => {
+    this.setState({
+      displayInputForm: !this.state.displayInputForm,
+    });
+  };
+
+  handleInputSubmit = () => {
+    return null;
+  };
   render() {
     return (
-      <div className="calendar-and-svg">
-        <p>КАЛЕНДАР ПОДІЙ</p>
-        <img src="./format/header/calendar.svg" />
+      <div className="father">
+        <div
+          className="calendar-events-onclick-area"
+          onClick={() => this.handleShowCalendar()}
+        >
+          <p>КАЛЕНДАР ПОДІЙ</p>
+          <img src="./format/header/calendar.svg" />
+        </div>
+        <Dialog
+          fullScreen
+          open={this.state.open}
+          onClose={this.handleClose}
+          TransitionComponent={Transition}
+        >
+          <div className="calend">
+            <CalendarPage
+              displayCalendar={this.state.displayCalendar}
+              listData={this.state.listData}
+            />
+            <p
+              className="burger-dropdown-menu-close"
+              onClick={this.handleClose}
+            >
+              ╳
+            </p>
+          </div>
+        </Dialog>
       </div>
     );
   }

@@ -13,6 +13,9 @@ import clip from '../../format/children/clip.svg';
 import './SliderForChildren.css';
 
 class SliderForChildren extends Component {
+  toTop = () => {
+    window.scrollTo(0, 0);
+  };
   render() {
     return (
       <div
@@ -34,6 +37,7 @@ class SliderForChildren extends Component {
         />
         <Link to={`/RegistrationPage`}>
           <Button
+            onClick={this.toTop}
             className="main-window-registration-button"
             buttonName={'ЗАРЕЄСТРУВАТИСЬ'}
           />

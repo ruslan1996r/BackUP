@@ -25,7 +25,7 @@ class ModalArtOrder extends Component {
 
   handleSubmit = (evt) => {
     evt.preventDefault();
-    let { name, email, phone, address } = this.state;
+    let { name, phone, email, address } = this.state;
     this.setState({
       name: '',
       phone: '',

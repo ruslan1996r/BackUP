@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Slider from 'react-slick';
 
-import { sendFeedback } from '../../redux/actions/sendFeedback'; // СЮДА импортнуть (уже не нужно)
+// import { sendFeedback } from '../../redux/actions/sendFeedback'; // СЮДА импортнуть (уже не нужно)
 
 class SimpleSlider extends Component {
   render() {
@@ -40,13 +40,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => {
-  return {
-    sendFeedback: (message) =>
-      dispatch(sendFeedback(message)),
-    //в скобках прописать название ACTION CREATOR, который потом отсылает action в STORE (REDUCER)
-
-    //onClick={this.props.sendFeedback(item.name)} - повесить на кнопку отправления сообщения/фидбека
-  };
+  return {};
 };
 
 export default connect(

@@ -11,6 +11,28 @@ import WolrdEyeImg from '../../images/course-artboard.svg';
 import './WorldEyeArtist.css';
 
 class WorldEyeArtist extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      display: false,
+    };
+  }
+
+  handleDatails = () => {
+    this.setState({
+      display: !this.state.display,
+    });
+  };
+
+  // handleHideDatails = () => {
+  //   this.setState({
+  //     display: false,
+  //   });
+  // };
+
+  toTop = () => {
+    window.scrollTo(0, 0);
+  };
   render() {
     return (
       <div
@@ -25,13 +47,39 @@ class WorldEyeArtist extends Component {
             «СВІТ ОЧИМА ХУДОЖНИКА»
           </h2>
           <p className="text-in-artist">
-            Даний курс дає можливість побачити наш дивний
-            світ очима справжнього
-            <br />
-            художника, який любить свою роботу і передає
-            своє бачення і натхнення
-            <br />
-            своїм учням. <a href="..">Детальніше ></a>
+            <p>
+              Даний курс дає можливість побачити наш дивний
+              світ очима справжнього художника, який любить
+              свою роботу і передає своє бачення і натхнення
+              своїм учням.
+              <p
+                className="details-p"
+                onClick={() => {
+                  this.handleDatails();
+                }}
+              >
+                Детальніше >
+              </p>
+            </p>{' '}
+            <div>
+              <article
+                // style={
+                //   this.state.display
+                //     ? { transform: 'translateY(100%)' }
+                //     : { transform: 'translateY(0%)' }
+                // }
+                className={
+                  this.state.display
+                    ? 'details'
+                    : 'hide-details'
+                }
+              >
+                Was wollen wir trinken sieben Tage lang, was
+                wollen wir trinken,so ein Durst! Was wollen
+                wir trinken sieben Tage lang, was wollen wir
+                trinken, so ein Durst!
+              </article>
+            </div>
           </p>
           <Route
             path="/RegistrationPage"
@@ -39,6 +87,7 @@ class WorldEyeArtist extends Component {
           />
           <Link to={`/RegistrationPage`}>
             <Button
+              onClick={this.toTop}
               className="main-window-registration-button"
               buttonName={'ЗАРЕЄСТРУВАТИСЬ'}
             />

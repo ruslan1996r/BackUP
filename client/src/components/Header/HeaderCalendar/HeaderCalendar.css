@@ -10,3 +10,67 @@
   width: 25px;
   margin-left: 10px;
 }
+
+.calend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.father {
+  /* background-color: rgb(255, 221, 221); */
+  z-index: 120;
+}
+
+.hide {
+  display: none;
+  background-color: rgb(255, 255, 255);
+}
+.show {
+  background-color: rgb(255, 255, 255);
+}
+
+.calendar-events-onclick-area {
+  width: 160px;
+  height: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.calendar-events-onclick-area img {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.calend .burger-dropdown-menu-close {
+  top: 10px;
+  right: 20px;
+}
+
+@import './antd.css';
+
+.events {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.events .ant-badge-status {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+
+.notes-month {
+  text-align: center;
+  font-size: 28px;
+}
+.notes-month section {
+  font-size: 28px;
+}

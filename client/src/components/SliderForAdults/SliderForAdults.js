@@ -11,6 +11,9 @@ import Button from '../Button/Button';
 import './SliderForAdults.css';
 
 class SliderForAdults extends Component {
+  toTop = () => {
+    window.scrollTo(0, 0);
+  };
   render() {
     return (
       <div
@@ -27,6 +30,7 @@ class SliderForAdults extends Component {
         />
         <Link to={`/RegistrationPage`}>
           <Button
+            onClick={this.toTop}
             className="main-window-registration-button"
             buttonName={'ЗАРЕЄСТРУВАТИСЬ'}
           />

@@ -4,7 +4,7 @@ import {
   Link,
 } from 'react-router-dom';
 
-import wwad from '../../format/shop/left-arrow.svg';
+// import wwad from '../../format/shop/left-arrow.svg';
 
 import ShopSlider from './ShopSlider';
 import ShopsPage from '../../pages/ShopsPage/ShopsPage';

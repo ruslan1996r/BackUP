@@ -13,6 +13,9 @@ import HeaderCalendar from '../HeaderCalendar/HeaderCalendar';
 import './HeaderVideoText.css';
 
 class HeaderVideoText extends Component {
+  toTop = () => {
+    window.scrollTo(0, 0);
+  };
   render() {
     return (
       <div>
@@ -42,6 +45,7 @@ class HeaderVideoText extends Component {
               <div className="z-index-button">
                 <Link to={`/RegistrationPage`}>
                   <Button
+                    onClick={this.toTop}
                     className="main-window-registration-button"
                     buttonName={'ЗАРЕЄСТРУВАТИСЬ'}
                   />

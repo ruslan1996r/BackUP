@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 
 import Button from '../Button/Button';
 import ModalArtOrder from '../ModalArtOrder/ModalArtOrder';
+import { buySubmit } from '../../redux/actions/indexPage';
 
 class SimpleSlider extends Component {
   constructor(props) {
@@ -24,9 +25,11 @@ class SimpleSlider extends Component {
     console.log('inside handleOpenModal');
   };
 
-  onSubmitModal = (name, phone, address) => {
-    console.log(name, phone, address);
+  onSubmitModal = (name, phone, email, address) => {
+    console.log(name, phone, email, address);
+    let id = 3;
     // actionCreator('OTPRAVIT_NA_SERVAK', payload: {name, email, feedbackText})
+    buySubmit(id, name, phone, email, address);
     this.setState({
       isOrdered: true,
     });
@@ -102,4 +105,17 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(SimpleSlider);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    buySubmit: (id, name, email, phone, address) => {
+      dispatch(buySubmit(id, name, email, phone, address));
+    }, //данные для SimpleSlider
+  };
+};
+
+//ЗАКОНСОЛЬЛОЖИТЬ ГЕЕВ
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(SimpleSlider);

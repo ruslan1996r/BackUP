@@ -11,6 +11,9 @@ import RegistrationPage from '../../pages/RegistrationPage/RegistrationPage';
 import './OrderSlider.css';
 
 class OrderSlider extends Component {
+  toTop = () => {
+    window.scrollTo(0, 0);
+  };
   render() {
     return (
       <div id="order-id" className="order">
@@ -27,6 +30,7 @@ class OrderSlider extends Component {
         />
         <Link to={`/RegistrationPage`}>
           <Button
+            onClick={this.toTop}
             className="main-window-registration-button"
             buttonName={'ЗАРЕЄСТРУВАТИСЬ'}
           />
