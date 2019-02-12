@@ -80,12 +80,7 @@ class CalendarPage extends Component {
             dateCellRender={this.dateCellRender}
             fullscreen={true}
             monthCellRender={this.monthCellRender}
-            // defaultValue={moment}
-            // onPanelChange={onPanelChange}
-            // onSelect={onSelect}
-            onSelect={(e) => {
-              console.log(e);
-            }}
+            onSelect={(e) => {}}
             className={
               this.props.displayCalendar ? 'show' : 'hide'
             }
@@ -96,9 +91,9 @@ class CalendarPage extends Component {
             dayData={{
               events: [
                 'варнава',
-                'zalupa',
+                'nigga',
                 'я веган',
-                'hitler',
+                'Hitler 卐',
               ],
               info: { day: 2, month: 1, year: 2019 },
             }}

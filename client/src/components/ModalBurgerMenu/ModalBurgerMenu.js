@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import HeaderCalendar from '../Header/HeaderCalendar/HeaderCalendar';
+import SocialNetwork from '../SocialNetwork/SocialNetwork';
 import './ModalBurgerMenu.css';
 
 class ModalBurgerMenu extends Component {
@@ -69,13 +71,18 @@ class ModalBurgerMenu extends Component {
                 Контакти
               </a>
             </div>
+
             <div className="burger-menu-data-footer">
+              <p className="burger-menu-data">
+                <HeaderCalendar />
+              </p>
               <p className="burger-menu-data">
                 {this.props.info.phoneNumber}
               </p>
               <p className="burger-menu-data">
                 {this.props.info.email}
               </p>
+              <SocialNetwork className="burger-menu-social-network" />
             </div>
           </div>
           <p

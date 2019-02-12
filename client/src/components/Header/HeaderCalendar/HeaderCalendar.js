@@ -12,10 +12,14 @@ function Transition(props) {
 class HeaderCalendar extends Component {
   constructor(props) {
     super(props);
-    // this.getListData = this.getListData.bind(this);
-    // this.dateCellRender = this.dateCellRender.bind(this);
-    // this.getMonthData = this.getMonthData.bind(this);
-    // this.monthCellRender = this.monthCellRender.bind(this);
+
+    let width = window.innerWidth;
+
+    if (width <= 650) {
+      this.changeWidth = '';
+    } else {
+      this.changeWidth = 'Події:';
+    }
 
     this.state = {
       displayCalendar: true,
@@ -26,7 +30,7 @@ class HeaderCalendar extends Component {
           month: 0,
           year: 2019,
           type: 'warning',
-          content: 'Події на сьогодні:',
+          content: this.changeWidth,
         },
         {
           day: 2,

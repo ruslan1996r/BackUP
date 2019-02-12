@@ -35,3 +35,13 @@
   font-family: 'Roboto', sans-serif;
   font-size: 11pt;
 }
+
+@media screen and (max-width: 576px) {
+  .footer {
+    flex-direction: column-reverse;
+  }
+
+  .all-right-reserved {
+    margin-top: 20px;
+  }
+}

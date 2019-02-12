@@ -6,6 +6,13 @@ import Slider from 'react-slick';
 
 class SimpleSlider extends Component {
   render() {
+    let width = window.innerWidth;
+    let changeWidth;
+    if (width <= 650) {
+      changeWidth = 1;
+    } else {
+      changeWidth = 3;
+    }
     var settings = {
       dots: true,
       infinite: true,
@@ -13,8 +20,8 @@ class SimpleSlider extends Component {
       autoplay: true,
       autoplaySpeed: 5000,
       arrows: false,
-      slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToShow: changeWidth,
+      slidesToScroll: changeWidth,
     };
     return (
       <div className="reviews-slider-element">

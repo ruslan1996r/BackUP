@@ -42,6 +42,13 @@ class SimpleSlider extends Component {
     });
   };
   render() {
+    let width = window.innerWidth;
+    let changeWidth;
+    if (width <= 650) {
+      changeWidth = 1;
+    } else {
+      changeWidth = 3;
+    }
     var settings = {
       dots: false,
       infinite: true,
@@ -49,7 +56,7 @@ class SimpleSlider extends Component {
       autoplay: false,
       autoplaySpeed: 2000,
       arrows: true,
-      slidesToShow: 3,
+      slidesToShow: changeWidth,
       slidesToScroll: 1,
     };
     return (

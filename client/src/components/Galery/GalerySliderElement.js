@@ -4,6 +4,13 @@ import Slider from 'react-slick';
 
 class GalerySliderElement extends Component {
   render() {
+    let width = window.innerWidth;
+    let changeWidth;
+    if (width <= 650) {
+      changeWidth = 1;
+    } else {
+      changeWidth = 2;
+    }
     var settings = {
       dots: false,
       infinite: true,
@@ -11,7 +18,7 @@ class GalerySliderElement extends Component {
       autoplay: true,
       autoplaySpeed: 3000,
       arrows: true,
-      slidesToShow: 2,
+      slidesToShow: changeWidth,
       slidesToScroll: 1,
     };
     return (

@@ -30,7 +30,7 @@ class CalendarModal extends Component {
   };
   render() {
     return (
-      <div>
+      <div open={this.props.isVisible}>
         <Dialog
           open={this.props.isVisible}
           onClose={this.props.handleClose}

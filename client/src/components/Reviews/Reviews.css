@@ -176,8 +176,19 @@
   font-size: 15px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 576px) {
   .triangle {
     display: none;
+  }
+  .text-review {
+    text-align: center;
+    width: 100%;
+  }
+  .author {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .reviews-container {
+    height: 80%;
   }
 }

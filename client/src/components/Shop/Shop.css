@@ -218,3 +218,17 @@
 .slick-next:before {
   transform: rotate(180deg);
 }
+
+@media screen and (max-width: 576px) {
+  .shop-slider {
+    margin-bottom: 3%;
+  }
+
+  .shop-slider .slick-list {
+    width: 250px;
+  }
+
+  .slick-initialized .slick-slide {
+    padding-left: 10px;
+  }
+}

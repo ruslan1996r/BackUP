@@ -81,3 +81,19 @@
 .z-index-button {
   z-index: 100;
 }
+
+@media screen and (max-width: 576px) {
+  .main-text {
+    width: 80%;
+    letter-spacing: 0.2em;
+  }
+  .header-video {
+    font-size: 35px;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: end;
+  }
+  .top-header {
+    display: none;
+  }
+}

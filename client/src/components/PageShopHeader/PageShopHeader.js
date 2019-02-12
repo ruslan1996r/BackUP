@@ -21,6 +21,9 @@ class PageShopHeader extends Component {
           <div className="page-shop-header">
             <img src="./format/header/header-logo.svg" />
           </div>
+          <div className="mobile-header-img">
+            <img src="./format/header/logo-mobile.svg" />
+          </div>
           <div className="calendar-and-menu-container">
             <div className="calendar-and-menu">
               <HeaderPhoneNumber />

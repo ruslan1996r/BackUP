@@ -36,3 +36,35 @@
   width: 350px;
   margin-left: 10%;
 }
+.mobile-header-img {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .page-shop-header {
+    display: none;
+  }
+  .calendar-and-menu-container {
+    width: 100%;
+    background: none;
+    border-bottom: 1px solid;
+  }
+  .calendar-and-menu {
+    display: none;
+  }
+  .header-container {
+    height: 100px;
+  }
+  .mobile-header-img {
+    display: block !important;
+    margin-left: 20px;
+    width: 80px;
+    position: absolute;
+  }
+  #registrate {
+    width: 90% !important;
+  }
+  .hiddenradio {
+    justify-content: center !important;
+  }
+}
