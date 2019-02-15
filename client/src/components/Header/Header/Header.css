@@ -8,6 +8,7 @@ video {
 .main-video {
   position: relative;
   height: 100vh;
+  min-height: 500px;
 }
 
 .sidebar-and-video {
@@ -17,6 +18,7 @@ video {
   width: 100%;
   justify-content: space-between;
   position: relative;
+  min-height: 500px;
 }
 
 .sidebar {
@@ -44,10 +46,13 @@ video {
   width: 100%;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1000px) {
   .sidebar {
     display: none;
   }
+}
+
+@media screen and (max-width: 767px) {
   .video-header {
     width: 100%;
     height: 100%;

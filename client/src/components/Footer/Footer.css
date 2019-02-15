@@ -21,7 +21,7 @@
 }
 
 .footer-social-network img {
-  width: 25px;
+  width: 40px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -33,10 +33,10 @@
 .all-right-reserved {
   color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 11pt;
+  font-size: 24px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .footer {
     flex-direction: column-reverse;
   }

@@ -31,10 +31,10 @@ class SlideAdultsEvent extends Component {
                   <li>
                     <div className="descr-event">
                       <p className="cost-time-p">
-                        {item.time}
+                        Тривалість: {item.time}
                       </p>
                       <p className="cost-time-p">
-                        {item.cost}
+                        Вартість: {item.cost}
                       </p>
                     </div>
                     <img
@@ -43,7 +43,7 @@ class SlideAdultsEvent extends Component {
                     />
                   </li>
                 </ul>
-                <p>{item.name}</p>
+                <p className="adults-footer">{item.name}</p>
               </div>
             );
           })}

@@ -30,8 +30,9 @@
 }
 
 .calendar-events-onclick-area {
-  width: 160px;
+  width: 180px;
   height: 20px;
+  font-size: 18px;
   display: flex;
   text-align: center;
   align-items: center;
@@ -94,7 +95,7 @@
   font-size: 28px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .calendar-events-onclick-area {
     display: none;
   }

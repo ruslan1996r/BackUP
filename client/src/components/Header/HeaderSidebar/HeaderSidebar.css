@@ -3,12 +3,14 @@
   flex-direction: column;
   align-items: center;
   z-index: 1;
+  justify-content: center;
+  height: 600px;
 }
 
 .social-network img {
-  width: 25px;
+  width: 60px;
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   justify-content: center;
 }
 
@@ -47,4 +49,10 @@
 
 .header-image {
   width: 70%;
+}
+
+@media screen and (max-width: 1366px) {
+  .sidebar-text {
+    display: none;
+  }
 }

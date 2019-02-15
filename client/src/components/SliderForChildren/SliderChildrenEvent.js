@@ -31,10 +31,10 @@ class SliderChildrenEvent extends Component {
                   <li>
                     <div className="descr-children-event">
                       <p className="cost-time-p">
-                        {item.time}
+                        Тривалість: {item.time}
                       </p>
                       <p className="cost-time-p">
-                        {item.cost}
+                        Вартість: {item.cost}
                       </p>
                     </div>
                     <img
@@ -43,7 +43,9 @@ class SliderChildrenEvent extends Component {
                     />
                   </li>
                 </ul>
-                <p>{item.weekDay}</p>
+                <p className="children-footer">
+                  {item.weekDay}
+                </p>
               </div>
             );
           })}

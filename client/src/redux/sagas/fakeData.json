@@ -44,19 +44,23 @@
   "orderList": [
     {
       "name": "Індивідуальні заняття",
-      "img": "./format/offer/offer-lesson.svg"
+      "img": "./format/offer/individual.svg",
+      "price": "300 грн"
     },
     {
       "name": "Корпоративні майтер-класи",
-      "img": "./format/offer/offer-master_class.svg"
+      "img": "./format/offer/corporative.svg",
+      "price": "300 грн"
     },
     {
       "name": "Картини на замовлення",
-      "img": "./format/offer/offer-certificate.svg"
+      "img": "./format/offer/ordered-pictures.svg",
+      "price": "300 грн"
     },
     {
       "name": "Подарункові сертифікати",
-      "img": "./format/offer/offer-lesson.svg"
+      "img": "./format/offer/certificate.svg",
+      "price": "300 грн"
     }
   ],
   "painterEyes": {

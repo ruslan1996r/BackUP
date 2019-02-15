@@ -40,7 +40,7 @@
   display: none;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .page-shop-header {
     display: none;
   }

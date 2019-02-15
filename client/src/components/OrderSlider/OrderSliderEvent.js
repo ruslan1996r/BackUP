@@ -27,7 +27,16 @@ class OrderSliderEvent extends Component {
           {this.props.orderList.map((item, key) => {
             return (
               <div className="slider-event">
-                <img src={item.img} alt="Картинка" />
+                <ul>
+                  <li>
+                    <div className="descr-order">
+                      <p className="cost-time-p">
+                        Вартість: {item.price}
+                      </p>
+                    </div>
+                    <img src={item.img} alt="Картинка" />
+                  </li>
+                </ul>
                 <p className="event-name">{item.name}</p>
               </div>
             );

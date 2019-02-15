@@ -1,16 +1,24 @@
 .triangle-and-reviews {
   display: flex;
   height: 400px;
-  margin-bottom: 10%;
-  margin-top: 5%;
+  margin-bottom: 240px;
+  margin-top: 160px;
+}
+
+.triangle-and-reviews .slick-list {
+  width: 1100px;
+}
+.triangle-and-reviews .slick-slider {
+  margin-bottom: 70px;
 }
 
 .reviews-header {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
-  font-size: 20pt;
+  font-size: 48px;
   text-align: center;
   letter-spacing: 1px;
+  margin-bottom: 70px;
 }
 
 .reviews-container {
@@ -30,20 +38,16 @@
 .slider-element {
   width: 100%;
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .triangle {
   position: absolute;
-  height: 400px;
-  width: 20%;
-  display: flex;
-  align-items: center;
 }
 
 .figure {
-  width: 50%;
-  height: 60%;
+  width: 180px;
+  height: 360px;
   display: flex;
   justify-content: center;
 }
@@ -54,8 +58,9 @@
 
 .text-review {
   width: 90%;
-  margin-bottom: 6%;
+  margin-bottom: 25px;
   line-height: 1.5em;
+  color: black;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////// */
@@ -154,7 +159,7 @@
   border: none;
   font-weight: bold;
   cursor: pointer;
-  top: 50%;
+  top: 40%;
 }
 
 .slick-next:before,
@@ -176,10 +181,13 @@
   font-size: 15px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1366px) {
   .triangle {
     display: none;
   }
+}
+
+@media screen and (max-width: 767px) {
   .text-review {
     text-align: center;
     width: 100%;

@@ -27,11 +27,12 @@
 .modal-window-header-picture {
   text-align: center;
   margin-top: 25px;
-  font-size: 11pt;
+  font-size: 20px;
 }
 
 .popup-element-header-styles {
   display: flex;
+  font-size: 16px;
 }
 .popup-element-header-styles p {
   color: #f00;
